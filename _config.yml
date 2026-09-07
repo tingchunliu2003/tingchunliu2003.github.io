@@ -43,16 +43,16 @@ author:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/tingchunliu2003"
+      url: "https://github.com/davidliu012"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:david551158@gmail.com"
+      url: "mailto:tingchun.academic@gmail.com"
 
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/tingchunliu2003"
+      url: "https://github.com/davidliu012"
 
 # --- Front-matter defaults ----------------------------------------
 defaults:
