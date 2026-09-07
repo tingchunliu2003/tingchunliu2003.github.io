@@ -1,11 +1,11 @@
 # --- Theme ---------------------------------------------------------------
 remote_theme: "mmistakes/minimal-mistakes@4.27.1"
-minimal_mistakes_skin: "default" # air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+minimal_mistakes_skin: "dark" # air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
 
 # --- Site ----------------------------------------------------------------
 locale: "en-US"
-title: "Ting-Chun Liu"
-name: "Ting-Chun Liu"
+title: "Ting-Chun (Ting) Liu"
+name: "Ting-Chun (Ting) Liu"
 description: "Master's student in Biomedical Engineering at Johns Hopkins University."
 url: "https://tingchunliu2003.github.io"
 baseurl: ""
@@ -14,8 +14,6 @@ search: true
 
 # --- Build -------------------------------------------------------------
 markdown: kramdown
-paginate: 5
-paginate_path: /page:num/
 timezone: America/New_York
 
 include:
@@ -24,16 +22,24 @@ include:
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
 
+# --- Collections -----------------------------------------------------
+collections:
+  techposts:
+    output: true
+    permalink: /:collection/:path/
+  miscellaneous:
+    output: true
+    permalink: /:collection/:path/
+
 # --- Author sidebar --------------------------------------------------
 author:
-  name: "Ting-Chun Liu"
+  name: "Ting-Chun (Ting) Liu"
   bio: "Biomedical Engineering M.S. @ Johns Hopkins University"
   location: "Baltimore, MD"
-  # avatar: "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/selfie.png"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -52,16 +58,20 @@ footer:
 defaults:
   - scope:
       path: ""
-      type: posts
+      type: pages
     values:
       layout: single
       author_profile: true
-      read_time: true
-      share: true
-      related: true
   - scope:
       path: ""
-      type: pages
+      type: techposts
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  - scope:
+      path: ""
+      type: miscellaneous
     values:
       layout: single
       author_profile: true

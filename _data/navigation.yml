@@ -1,6 +1,10 @@
 # Top navigation bar
 main:
-  - title: "About"
-    url: /about/
-  - title: "Posts"
-    url: /posts/
+  - title: "Home"
+    url: /
+  - title: "Publications"
+    url: /publications/
+  - title: "TechPosts"
+    url: /techposts/
+  - title: "Miscellaneous"
+    url: /miscellaneous/

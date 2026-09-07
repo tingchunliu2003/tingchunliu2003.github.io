@@ -7,7 +7,6 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"  # required by Minimal Mistakes
   gem "jekyll-feed"
   gem "jekyll-sitemap"
-  gem "jekyll-paginate"
 end
 
 # Local dev server (no longer bundled with Ruby 3.0+).

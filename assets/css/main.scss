@@ -1,0 +1,39 @@
+---
+# Main stylesheet: pulls in the remote theme, then adds a few local tweaks.
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* Left column always at full brightness (theme dims it to 0.75 until hover). */
+.sidebar {
+  opacity: 1;
+}
+
+/* Larger author photo in the sidebar (~80% of the column). */
+.author__avatar img {
+  max-width: 80%;
+
+  @include breakpoint($large) {
+    max-width: 80%;
+  }
+}
+
+/* Remove the auto-generated "Permalink" anchor the theme adds to headings. */
+.page__content .header-link {
+  display: none;
+}
+
+/* "[CV]" link next to a heading: same size/weight as the heading, blue, link-like. */
+a.cv-link {
+  margin-left: 0.4em;
+  font-size: 1em;
+  color: #4d9fff;
+
+  &:hover {
+    color: #4d9fff;
+    text-decoration: underline;
+  }
+}

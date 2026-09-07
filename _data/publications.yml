@@ -1,0 +1,10 @@
+# Newest first. `links` is optional; add as many labelled links as you want.
+- title: "An Example Paper Title Goes Here"
+  authors: "Ting-Chun Liu, Second Author, Third Author"
+  venue: "Journal / Conference Name"
+  year: 2026
+  links:
+    - label: "PDF"
+      url: "#"
+    - label: "Code"
+      url: "#"
