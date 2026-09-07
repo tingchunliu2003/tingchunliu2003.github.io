@@ -1,0 +1,67 @@
+# --- Theme ---------------------------------------------------------------
+remote_theme: "mmistakes/minimal-mistakes@4.27.1"
+minimal_mistakes_skin: "default" # air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+
+# --- Site ----------------------------------------------------------------
+locale: "en-US"
+title: "Ting-Chun Liu"
+name: "Ting-Chun Liu"
+description: "Master's student in Biomedical Engineering at Johns Hopkins University."
+url: "https://tingchunliu2003.github.io"
+baseurl: ""
+repository: "tingchunliu2003/tingchunliu2003.github.io"
+search: true
+
+# --- Build -------------------------------------------------------------
+markdown: kramdown
+paginate: 5
+paginate_path: /page:num/
+timezone: America/New_York
+
+include:
+  - _pages
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+# --- Author sidebar --------------------------------------------------
+author:
+  name: "Ting-Chun Liu"
+  bio: "Biomedical Engineering M.S. @ Johns Hopkins University"
+  location: "Baltimore, MD"
+  # avatar: "/assets/images/bio-photo.jpg"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tingchunliu2003"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:david551158@gmail.com"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tingchunliu2003"
+
+# --- Front-matter defaults ----------------------------------------
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
