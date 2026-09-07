@@ -26,14 +26,22 @@ html {
   }
 }
 
-/* Left column always at full brightness (theme dims it to 0.75 until hover). */
+/* Left column: always full brightness (theme dims it to 0.75 until hover),
+   and nudged down a bit so it doesn't sit flush with the top. */
 .sidebar {
   opacity: 1;
+
+  @include breakpoint($large) {
+    margin-top: 2em;
+  }
 }
 
-/* Larger author photo in the sidebar (~80% of the column). */
+/* Author photo: larger (~80% of the column) and cropped to a square so the
+   theme's border-radius: 50% renders a round circle instead of an ellipse. */
 .author__avatar img {
   max-width: 80%;
+  aspect-ratio: 1 / 1.15;
+  object-fit: cover;
 
   @include breakpoint($large) {
     max-width: 80%;
